@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@import url(https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Quattrocento:wght@700&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Poppins&family=Quattrocento:wght@700&display=swap);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#signup-body label{
+    font-weight: 200;
+}
+body{
+    height: 100%;
+    font-family: 'Inter', sans-serif;
+    font-size: small;
+    font-weight: bold;
+    background-image: url('../resources/gradient.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+   
+    
+}
+.outer-box{
+    height: 100%;
+    width: 100%;
+    height: 100vh;
+    /* background: radial-gradient(Circle at top left,#E5D5FF 15%,#FFC9D5 ,#FFDFC5,#ddfffcd8 ); */
+}
+.inner-box{
+    width: 400px;
+    margin: 0 auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 20px 40px;
+    background-color: #0000002d;
+    backdrop-filter: blur(8px);
+    border-radius: 8px;
+    /* box-shadow: 2px 2px 5px ; */
+    z-index: 2;
+    color: whitesmoke;
+    font-weight: 300;
+    
+}
+.signup-header h1{
+    font-size: 2.5rem;
+    color: white;
+}
+
+/* .signup-header p{
+    font-size: 0.9 rem;
+    color: rgb(240, 236, 236);
+} */
+.signup-body{
+    margin: 20px 0px;
+}
+.signup-body p{
+    margin: 10px 0px;
+    
+}
+.signup-body p label{
+    display: block;
+}
+.signup-body p input{
+    background-color: #575757b7;
+    width: 100%;
+    padding: 5px;   
+    border: 2px solid #68686800;
+    border-radius: 4px;
+    font-size: 1 rem;
+    margin-top: 4px;
+    color: white;
+}
+::placeholder{
+    color: rgba(255, 255, 255, 0.696);
+}
+.signup-body p input[type="submit"]{
+    background-color: #FF4461;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+.signup-body p input[type="submit"]:hover{
+    background-color: #f01d3d;
+
+}
+.signup-footer{
+    color: #555;
+    text-align: center;
+}
+.signup-footer p a {
+    color: #FF4461;
+}
+/* .circle{
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    background: linear-gradient(to top left, #DDFFFC, #FFC9D5);
+    position: absolute;
+}
+.c1{
+    top: 100px;
+    left: 30px;
+}
+.c2{
+    bottom: 10px;
+    right: 50px;
+} */
+
+#submit {
+    background-color: #FF4461;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+#submit:hover {
+    background-color: #f01d3d;
+}

@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Quattrocento:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Poppins&family=Quattrocento:wght@700&display=swap');
+
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    margin: 0px;    
+    background-image: url('../resources/gradient.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.payment {
+    width: 40%;
+    margin-left: 25px;
+    height: 75%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    border: 1px solid grey;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    justify-content: center;
+    height: 75%;
+}
+
+.items {
+    height: 60%;
+    text-align: center;
+}
+
+.payment-text {
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 800;
+}
+
+.checkout {
+    width: 85%;
+    /* border-radius: 25px; */
+    background-color: rgb(33, 33, 33);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+}
+
+.hr {
+    width: 85%;
+    height: 2px;
+    background-color: grey;
+}
+
+table, th {
+    font-size: 20px;
+    font-weight: 500;
+}

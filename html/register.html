@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="../css/signUp.css">
+</head>
+<body>
+    
+    <div class="outer-box">
+        <div class="inner-box">
+            <header class="signup-header">
+                <h1 class="sign_up_heading">Sign up</h1>
+                <!-- <p>It just takes 30 sec</p> -->
+            </header>
+            <main class="signup-body">
+                <form action="/register" method="post">
+                    <p>
+                        <label for="fullname" style="font-family: 'Inter'; font-weight: 100;">Full Name</label>
+                        <input type="text" name="name" id="fullname" placeholder="Name" required>
+                    </p>
+                    <p>
+                        <label for="email">Email</label>
+                        <input type="text" name="email" id="email" placeholder="abc@gmail.com" required>
+                    </p>
+                    <p>
+                        <label for="universityid">University Id</label>
+                        <input type="text" name="id" id="universityid" placeholder="Enter your id" required>
+                    </p>
+                    <p>
+                        <label for="password">Password</label>
+                        <!-- <input type="password" id="psw" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" placeholder="Enter Password" required> -->
+                        <input type="password" id="psw" name="password" placeholder="Enter password">
+                    </p>
+                    <p>
+                        <input type="submit" id="submit" value="Sign up">
+                        <!-- <a href="index.html"><input type="button" value="Sign up" id="submit"></a> -->
+                    </p>
+                </form>
+            </main>
+
+            <footer class="signup-footer">
+                <p>Already have an Account? <a href="/">Login</a></p>
+            </footer>
+
+        <!-- <script src="../javascript/sign_up.js"></script> -->
+</body>
+</html>

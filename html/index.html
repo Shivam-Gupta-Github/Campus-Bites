@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CampusBites</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../css/index.css">
+</head>
+
+<body>
+  <!-- navbar starts-->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid header-box">
+      <a class="navbar-brand" href="#">CampusBites</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse nav-ul" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-links">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Feedback</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Menu</a>
+          </li>
+        </ul>
+        <div style="display: flex; align-items: center; justify-content: space-between; width: 65px;">
+          <a href=""><svg class="profile" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+              class="bi bi-person-circle" viewBox="0 0 16 16">
+              <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+              <path fill-rule="evenodd"
+                d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+            </svg>
+          </a>
+          <p style="margin: 0%;">You</p>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- navbar ends-->
+
+  <!-- hero section starts -->
+  <div class="hero">
+    <div id="hero-text">
+      <p class="h1">Enjoy our <br> Delicious Meal </p>
+      <p class="lead">
+        “The wait for your food cravings <br> comes to an end.”
+      </p>
+      <!-- <div id="signIn">
+        <a href="./signIn.html" style="text-decoration: none;"> 
+          <p style="margin: 0px; color: rgb(0, 0, 0); font-family: 'Poppins'; font-weight: 400;">Sign in</p> 
+        </a>
+      </div> -->
+    </div>
+
+    <div class="hero-card">
+      <div class="card-row">
+        <a href="#ni" style="text-decoration: none;"><div class="card-box">
+          <img src="../resources/foods/north indian.png" class="card-image" alt="northIndianFood">
+          <h3>North Indian</h3>
+        </div></a>
+        <a href="#cn" style="text-decoration: none;"><div class="card-box">
+          <img src="../resources/foods/chineseFood.png" class="card-image" alt="chineseFood">
+          <h3>Chinese</h3>
+        </div></a>
+      </div>
+      <div class="card-row">
+        <a href="#bv" style="text-decoration: none;"><div class="card-box">
+          <img src="../resources/foods/beverages.png" class="card-image" alt="beverages">
+          <h3>Beverages</h3>
+        </div></a>
+        <a href="#ic" style="text-decoration: none;"><div class="card-box">
+          <img src="../resources/foods/ice cream.png" class="card-image" alt="ice-cream">
+          <h3>Ice Cream</h3>
+        </div></a>
+      </div>
+    </div>
+  </div>
+  <!-- hero section ends -->
+
+  <!-- menu -->
+  <div class="menu">
+    <h1 class="menu-title" id="ni">North Indian</h1>
+    <div class="category" id="north-indian">
+    </div>
+    <h1 class="menu-title" id="cn">Chinese</h1>
+    <div class="category" id="chinese">
+    </div>
+    <h1 class="menu-title" id="ic">Ice Cream</h1>
+    <div class="category" id="ice-cream">
+    </div>
+    <h1 class="menu-title" id="bv">Beverages</h1>
+    <div class="category" id="beverage">
+    </div>
+    <h1 class="menu-title">Others</h1>
+    <div class="category" id="others">
+    </div>
+  </div>
+  <!--menu ends  -->
+
+  <!-- basket -->
+  <div class="basket hidden">
+    <div class="basket-info">
+      <h3 id="no-of-items" class="basket-text">4 items added</h3>
+      <h3 id="total" class="basket-text">total : Rs. 75</h3>
+    </div>
+    <div class="go-to-cart"><a style="text-decoration: none; color: inherit;" href="basket.html">Proceed to pay</a>
+    </div>
+  </div>
+  <!-- basket ends -->
+
+  <script src="../javascript/index.js"></script>
+</body>
+
+</html>

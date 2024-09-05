@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>invalid</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Quattrocento:wght@700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Poppins&family=Quattrocento:wght@700&display=swap');
+
+        * {
+            margin: 0%;
+            padding: 0%;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 100vw;
+            height: 100vh;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            margin: 0px;
+            background-image: url('../resources/gradient.png');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+        h1 {
+            margin: 25px;
+        }
+
+        .button {
+            display: inline-block;
+            border-radius: 4px;
+            background-color: #FF4461;
+            border: none;
+            color: #FFFFFF;
+            text-align: center;
+            font-size: 28px;
+            padding: 10px;
+            width: 200px;
+            transition: all 0.5s;
+            cursor: pointer;
+            margin: 5px;
+        }
+
+        .button span {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
+        }
+
+        .button span:after {
+            content: '\00bb';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+            transition: 0.5s;
+        }
+
+        .button:hover span {
+            padding-right: 25px;
+        }
+
+        .button:hover span:after {
+            opacity: 1;
+            right: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Invalid Username or Password</h1>
+    <a href="/"><button class="button" style="vertical-align:middle"><span>Try again </span></button></a>
+</body>
+
+</html>
